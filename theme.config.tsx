@@ -1,18 +1,41 @@
 import React from 'react'
+import Image from 'next/image'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <>
+    <Image src="/logo.png" width="28" height="28" alt=""></Image>
+    <span style={{ marginLeft: '.4em', fontWeight: 600, fontSize: 26 }}>
+        boocai
+      </span>
+  </>,
+  logoLink: '/',
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/onezhjp',
   },
-  chat: {
-    link: 'https://discord.com',
-  },
+  chat: {},
   docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
-  footer: {
-    text: 'Nextra Docs Template',
+  search: {
+    component: <></>
   },
+  navigation: false,
+  editLink: {
+    text: '',
+    component: (props) => { return <></> },
+  },
+  feedback: {
+    content: null,
+  },
+  footer: {
+    text: (
+      <span>
+        {new Date().getFullYear()} {' © '}Powered by {' '}
+        <a href="https://nextra.site" target="_blank">
+          Nextra
+        </a>
+      </span>
+    )
+  }
 }
 
 export default config
