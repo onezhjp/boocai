@@ -13,6 +13,7 @@ const config: DocsThemeConfig = {
   logoLink: '/',
   head: (
     <>
+      <link rel="icon" type="image/x-icon" href="/logo.png"></link>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:title" content="boocai" />
       <meta property="og:description" content="boocai - personal site" />

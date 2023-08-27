@@ -25,11 +25,11 @@ export function Demo() {
                         <Button onClick={handleClick}  mr="5">Refresh</Button>
                         <Text mr="2">{count} 字</Text>
                         <Slider 
-                            min={10}
+                            min={20}
                             max={500}
-                            step={10}
+                            step={20}
                             defaultValue={[count]} 
-                            style={{width: '50vh'}} 
+                            style={{flexGrow: 1}} 
                             onValueChange={(vals)=>{setCount(vals[0])}}
                             />
                     </Flex>
