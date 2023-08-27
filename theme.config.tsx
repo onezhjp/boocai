@@ -1,4 +1,5 @@
 import React from 'react'
+import { useRouter } from 'next/router'
 import Image from 'next/image'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
@@ -6,10 +7,22 @@ const config: DocsThemeConfig = {
   logo: <>
     <Image src="/logo.png" width="28" height="28" alt=""></Image>
     <span style={{ marginLeft: '.4em', fontWeight: 600, fontSize: 26 }}>
-        boocai
-      </span>
+      boocai
+    </span>
   </>,
   logoLink: '/',
+  head: (
+    <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="og:title" content="boocai" />
+      <meta property="og:description" content="boocai - personal site" />
+    </>
+  ),
+  useNextSeoProps: () => {
+    return {
+      titleTemplate: '%s'
+    }
+  },
   project: {
     link: 'https://github.com/onezhjp',
   },
