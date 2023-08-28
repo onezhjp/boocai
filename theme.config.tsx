@@ -16,7 +16,13 @@ const config: DocsThemeConfig = {
       <link rel="icon" type="image/x-icon" href="/logo.png"></link>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:title" content="boocai" />
-      <meta property="og:description" content="boocai - personal site" />
+      <meta
+        property="og:description"
+        content="boocai's personal site, I write blogs and publish projects here." />
+      <meta
+        name="description"
+        content="boocai's personal site, I write blogs and publish projects here."
+      />
     </>
   ),
   useNextSeoProps: () => {
