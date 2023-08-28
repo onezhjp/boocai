@@ -9,4 +9,16 @@ const withNextra = require('nextra')({
 })
 
 
-module.exports = withPlugins([withTM, withNextra])
+module.exports = (_phase, { defaultConfig }) => {
+  // Workaround
+  delete defaultConfig.webpackDevMiddleware;
+  delete defaultConfig.configOrigin;
+  delete defaultConfig.target;
+  delete defaultConfig.webpack5;
+  delete defaultConfig.amp.canonicalBase;
+  delete defaultConfig.experimental.outputFileTracingRoot;
+  delete defaultConfig.i18n;
+
+  const plugins = [withTM, withNextra]
+  return plugins.reduce((acc, plugin) => plugin(acc), { ...defaultConfig })
+}
