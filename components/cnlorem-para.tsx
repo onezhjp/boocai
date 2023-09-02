@@ -4,7 +4,7 @@ import cnlorem from "cnlorem"
 export const LoremPara = (props) => {
     const [text, setText] = useState('')
     useEffect(() => {
-        setText(cnlorem(props.n));
+        setText(cnlorem({n: props.n, en: Math.floor(props.n*0.1)}));
     }, []);
     return (
         <>
