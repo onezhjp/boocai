@@ -9,8 +9,8 @@ dependencies:
     specifier: ^1.1.2
     version: 1.1.2(react-dom@18.2.0)(react@18.2.0)
   cnlorem:
-    specifier: ^1.5.1
-    version: 1.5.1
+    specifier: ^1.5.3
+    version: 1.5.3
   next:
     specifier: ^13.0.6
     version: 13.0.6(react-dom@18.2.0)(react@18.2.0)
@@ -1636,8 +1636,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /cnlorem@1.5.1:
-    resolution: {integrity: sha512-HJym9G++7A+sSj6NUkq/WTjCV68C3Zd69g7SZKc22AhVfKU1VJeUw4I8Mg/ff7RbhamEZ75xTEwVbX8FRA3YAg==}
+  /cnlorem@1.5.3:
+    resolution: {integrity: sha512-Zq8Ftbup5W/Oz97QvDMRS7DtOhmH7GXcGVI+X1neHdRK+OuxytGwTe/7VTPeIrf8kSkjt7ZfZ9ilvRnIyf7+Nw==}
     dev: false
 
   /color-convert@1.9.3:
