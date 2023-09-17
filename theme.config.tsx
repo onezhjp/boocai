@@ -31,7 +31,7 @@ const config: DocsThemeConfig = {
     }
   },
   project: {
-    link: 'https://github.com/onezhjp',
+    link: 'https://github.com/zip97',
   },
   chat: {},
   docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
