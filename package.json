@@ -19,6 +19,7 @@
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
     "@radix-ui/themes": "^1.1.2",
+    "@vercel/analytics": "^1.0.2",
     "cnlorem": "^1.5.3",
     "next": "^13.0.6",
     "next-compose-plugins": "^2.2.1",

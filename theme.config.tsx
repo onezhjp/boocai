@@ -3,6 +3,8 @@ import React from 'react'
 import Image from 'next/image'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
+import { Analytics } from '@vercel/analytics/react';
+
 const config: DocsThemeConfig = {
   logo: <>
     <Image src="/logo.png" width="28" height="28" alt=""></Image>
@@ -23,6 +25,7 @@ const config: DocsThemeConfig = {
         name="description"
         content="boocai's personal site, I write blogs and publish projects here."
       />
+      <Analytics />
     </>
   ),
   useNextSeoProps: () => {
